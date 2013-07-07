@@ -1,6 +1,7 @@
 <html>
 <head>
 	<style type="text/css">
+		body { font-size:20px; font-family:'Palatino Linotype',Palatino,'Book Antiqua',serif; }
 		#page2 { display:none; }
 	</style>
 	<script type="text/javascript" language="JavaScript">
@@ -24,20 +25,20 @@
 
 <form>
 <div id="page1">
-  	<input type="checkbox" value="Dress" />Dress<br />
-	<input type="checkbox" value="Flowers" />Flowers<br />
-	<input type="checkbox" value="Rings" />Rings<br />
-	<input type="checkbox" value="Bouquet" />Bouquet<br />
+  	<label><input type="checkbox" value="Dress" />Dress</label><br />
+	<label><input type="checkbox" value="Flowers" />Flowers</label><br />
+	<label><input type="checkbox" value="Rings" />Rings</label><br />
+	<label><input type="checkbox" value="Bouquet" />Bouquet</label><br />
 	<br />
 	<a href="javascript:Show('page2');javascript:Hide('page1');">Next -></a>
 </div>
 <div id="page2">
-  	<input type="checkbox" value="Tux" />Tux<br />
-	<input type="checkbox" value="Comb" />Comb<br />
-	<input type="checkbox" value="Tie" />Tie<br />
-	<input type="checkbox" value="Flask" />Flask<br />
+  	<label><input type="checkbox" value="Tux" />Tux</label><br />
+	<label><input type="checkbox" value="Comb" />Comb</label><br />
+	<label><input type="checkbox" value="Tie" />Tie</label><br />
+	<label><input type="checkbox" value="Flask" />Flask</label><br />
 	<br />
-	<a href="javascript:Show('page1');javascript:Hide('page2');">Back -></a>
+	<a href="javascript:Show('page1');javascript:Hide('page2');"><- Back</a>
 </div>
 </form>
 
