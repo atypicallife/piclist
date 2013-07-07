@@ -1,14 +1,46 @@
 <html>
+<head>
+	<style type="text/css">
+		#page2 { display:none; }
+	</style>
+	<script type="text/javascript" language="JavaScript">
+	  <!--
+	  function Hide(d) {document.getElementById(d).style.display = "none";}
+	  function Show(d) {document.getElementById(d).style.display = "block";}
+	  function HideContent(d) {
+	  document.getElementById(d).style.display = "none";
+	  }
+	  function ShowContent(d) {
+	  document.getElementById(d).style.display = "block";
+	  }
+	  function ReverseDisplay(d) {
+	  if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+	  else { document.getElementById(d).style.display = "none"; }
+	  }
+	  //-->
+	 </script>		
+</head>
 <body>
 
 <form>
-  <input type="checkbox" value="Dress" />
-	<input type="checkbox" value="Flowers" />
-	<input type="checkbox" value="Rings" />
-	<input type="checkbox" value="Bouquet" />
+<div id="page1">
+  	<input type="checkbox" value="Dress" />Dress<br />
+	<input type="checkbox" value="Flowers" />Flowers<br />
+	<input type="checkbox" value="Rings" />Rings<br />
+	<input type="checkbox" value="Bouquet" />Bouquet<br />
+	<br />
+	<a href="javascript:Show(page2);javascript:Hide(page1);">Next -></a>
+</div>
+<div id="page2">
+  	<input type="checkbox" value="Tux" />Tux<br />
+	<input type="checkbox" value="Comb" />Comb<br />
+	<input type="checkbox" value="Tie" />Tie<br />
+	<input type="checkbox" value="Flask" />Flask<br />
+	<br />
+	<a href="javascript:Show(page1);javascript:Hide(page2);">Back -></a>
+</div>
 </form>
 
-<a href="next.htm">Next -></a>
 
 </body>
 </html>
